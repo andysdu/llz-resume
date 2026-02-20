@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quantitative Research Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Controls (hidden on print) -->
+  <div class="controls no-print">
+    <button onclick="window.print()">Export PDF / Print</button>
+    <button onclick="toggleEdit()">Toggle Edit Mode</button>
+  </div>
+
+  <div class="page" id="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1 class="name" contenteditable="false">Your Full Name</h1>
+      <p class="tagline" contenteditable="false">Quantitative Research | Investment Banking</p>
+      <div class="contact-row">
+        <span contenteditable="false">📧 your.email@example.com</span>
+        <span contenteditable="false">📞 +1 (555) 000-0000</span>
+        <span contenteditable="false">🔗 linkedin.com/in/yourprofile</span>
+        <span contenteditable="false">💻 github.com/yourhandle</span>
+        <span contenteditable="false">📍 New York, NY</span>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section class="section">
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-text" contenteditable="false">
+        Quantitative researcher with strong foundations in mathematics, statistics, and financial theory.
+        Experienced in developing alpha-generating strategies, factor models, and derivative pricing frameworks.
+        Proficient in Python, R, and C++ with hands-on experience in large-scale financial data analysis,
+        backtesting infrastructure, and risk modeling. Seeking a quantitative research role in investment banking
+        to contribute analytical rigor and model innovation.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">M.S. Financial Mathematics</span>
+          <span class="entry-date" contenteditable="false">Aug 2022 – May 2024</span>
+        </div>
+        <div class="entry-sub">
+          <span contenteditable="false">University Name &mdash; City, State</span>
+          <span contenteditable="false">GPA: 3.95 / 4.00</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Relevant coursework: Stochastic Calculus, Derivatives Pricing, Statistical Learning, Time Series Analysis, Portfolio Optimization, Numerical Methods</li>
+          <li contenteditable="false">Thesis: <em>"Factor Decomposition of Cross-Sectional Equity Returns Using Sparse PCA"</em></li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">B.S. Mathematics &amp; Economics (Double Major)</span>
+          <span class="entry-date" contenteditable="false">Aug 2018 – May 2022</span>
+        </div>
+        <div class="entry-sub">
+          <span contenteditable="false">University Name &mdash; City, State</span>
+          <span contenteditable="false">GPA: 3.90 / 4.00 | Summa Cum Laude</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Awards: Dean's List (all semesters), Departmental Honors in Mathematics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">Quantitative Research Intern</span>
+          <span class="entry-date" contenteditable="false">Jun 2023 – Aug 2023</span>
+        </div>
+        <div class="entry-sub">
+          <span contenteditable="false">Investment Bank / Hedge Fund Name &mdash; New York, NY</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Built a multi-factor equity alpha model in Python, increasing Sharpe ratio by 0.18 over benchmark during out-of-sample testing on 10 years of daily return data.</li>
+          <li contenteditable="false">Implemented a Kalman filter-based pairs trading signal for statistical arbitrage on S&amp;P 500 constituents, achieving annualized returns of 12.4% with max drawdown under 6%.</li>
+          <li contenteditable="false">Automated backtesting pipeline using Pandas and NumPy, reducing research cycle time by 35%.</li>
+          <li contenteditable="false">Collaborated with senior quants to validate Black-Scholes and Heston model implementations for equity derivatives desk.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">Quantitative Research Assistant</span>
+          <span class="entry-date" contenteditable="false">Sep 2021 – May 2022</span>
+        </div>
+        <div class="entry-sub">
+          <span contenteditable="false">University Finance Lab &mdash; City, State</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Developed momentum and mean-reversion factor signals using CRSP and Compustat databases, contributing to a published working paper on factor zoo replication.</li>
+          <li contenteditable="false">Ran Monte Carlo simulations in Python and R to study option pricing under stochastic volatility regimes.</li>
+          <li contenteditable="false">Processed and cleaned 20+ years of tick-level market data using SQL and Dask for large-scale analysis.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">Volatility Surface Interpolation Engine</span>
+          <span class="entry-date" contenteditable="false">2024</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Constructed an arbitrage-free implied volatility surface using SABR and SVI parameterizations; validated against live market quotes with RMSE &lt; 0.3 vol points.</li>
+          <li contenteditable="false">Deployed as a Python library with a REST API interface for downstream pricing models.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title" contenteditable="false">Fixed Income Credit Risk Model</span>
+          <span class="entry-date" contenteditable="false">2023</span>
+        </div>
+        <ul>
+          <li contenteditable="false">Implemented reduced-form and structural (Merton) credit risk models to estimate probability of default and credit spreads for investment-grade corporate bonds.</li>
+          <li contenteditable="false">Backtested model predictions against 5 years of CDS spread data with Spearman rank correlation of 0.82.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <p contenteditable="false">Python (NumPy, Pandas, SciPy, Scikit-learn, PyTorch), R, C++, MATLAB, SQL, Bash</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Quantitative Methods</h3>
+          <p contenteditable="false">Stochastic Calculus, Monte Carlo Simulation, PDE Methods, Bayesian Inference, Time Series (ARIMA/GARCH), ML for Finance</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Finance Domains</h3>
+          <p contenteditable="false">Derivatives Pricing, Factor Models, Portfolio Optimization, Risk Management (VaR, CVaR), Fixed Income, Statistical Arbitrage</p>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <p contenteditable="false">Bloomberg Terminal, FactSet, Git/GitHub, Docker, Jupyter, LaTeX, Databricks</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS / CERTIFICATIONS -->
+    <section class="section">
+      <h2 class="section-title">Certifications &amp; Awards</h2>
+      <ul class="flat-list">
+        <li contenteditable="false"><strong>CFA Level II Candidate</strong> &mdash; CFA Institute, 2025</li>
+        <li contenteditable="false"><strong>FRM Part I Passed</strong> &mdash; GARP, 2023</li>
+        <li contenteditable="false"><strong>Putnam Mathematical Competition</strong> &mdash; Top 500 Nationally, 2021</li>
+        <li contenteditable="false"><strong>Best Quantitative Paper Award</strong> &mdash; University Finance Conference, 2022</li>
+      </ul>
+    </section>
+
+  </div><!-- /page -->
+
+  <script src="script.js"></script>
+</body>
+</html>
