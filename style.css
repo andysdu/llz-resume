@@ -41,6 +41,15 @@ body {
 
 .controls button:hover { background: #e0bf6a; }
 
+/* ── Links ── */
+a {
+  color: #0a1628;
+  text-decoration: none;
+  border-bottom: 1px solid #c8a951;
+}
+
+a:hover { color: #8a7030; }
+
 /* ── Page (A4-like) ── */
 .page {
   background: #ffffff;
