@@ -1,5 +1,13 @@
 let editMode = false;
 
+// Press backtick ` to reveal/hide the controls toolbar
+document.addEventListener('keydown', (e) => {
+  if (e.key === '`') {
+    const controls = document.querySelector('.controls');
+    controls.classList.toggle('controls-visible');
+  }
+});
+
 function toggleEdit() {
   editMode = !editMode;
   document.body.classList.toggle('edit-mode', editMode);

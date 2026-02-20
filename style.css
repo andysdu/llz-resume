@@ -16,9 +16,13 @@ body {
   z-index: 100;
   background: #0a1628;
   padding: 10px 24px;
-  display: flex;
+  display: none;
   gap: 12px;
   align-items: center;
+}
+
+.controls.controls-visible {
+  display: flex;
 }
 
 .controls button {
